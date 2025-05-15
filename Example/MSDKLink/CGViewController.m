@@ -6,13 +6,13 @@
 //  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
-#import "CPDViewController.h"
+#import "CGViewController.h"
 
-@interface CPDViewController ()
+@interface CGViewController ()
 
 @end
 
-@implementation CPDViewController
+@implementation CGViewController
 
 - (void)viewDidLoad
 {
@@ -27,4 +27,4 @@
 }
 
 @end
-Ú
+

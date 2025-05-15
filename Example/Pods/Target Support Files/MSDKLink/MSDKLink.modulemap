@@ -1,0 +1,6 @@
+framework module MSDKLink {
+  umbrella header "MSDKLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

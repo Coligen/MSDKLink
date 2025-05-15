@@ -6,13 +6,20 @@
 //  Copyright (c) TODAYS_YEAR PROJECT_OWNER. All rights reserved.
 //
 
-#import "CPDAppDelegate.h"
+#import "CGAppDelegate.h"
+#import "CGViewController.h"
 
-@implementation CPDAppDelegate
+#import <MSDKLink/LinkManager.h>
+
+@implementation CGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [CGViewController new];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
@@ -44,4 +51,4 @@
 }
 
 @end
-f
+

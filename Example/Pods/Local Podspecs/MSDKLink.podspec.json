@@ -1,0 +1,22 @@
+{
+  "name": "MSDKLink",
+  "version": "0.1.0",
+  "summary": "A short description of MSDKLink.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/359796875@qq.com/MSDKLink",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "359796875@qq.com": "pengyuehui@adse.cc"
+  },
+  "source": {
+    "git": "https://github.com/359796875@qq.com/MSDKLink.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "MSDKLink/Classes/**/*"
+}
