@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MSDKLink'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'A short description of Link SDK'
 
   s.description      = 'Coligen Link SDK'

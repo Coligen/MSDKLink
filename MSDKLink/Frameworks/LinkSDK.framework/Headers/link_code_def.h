@@ -338,10 +338,16 @@ typedef enum {
 #endif
 
 typedef enum {
-    LINK_CONNECTION_NONE    = 0,    //无连接
-    LINK_CONNECTION_WIFI    = 1,    //通过WiFi连接
-    LINK_CONNECTION_4G      = 2,    //通过4G连接
-    LINK_CONNECTION_ALL     = 3,    //通过WiFi和4G同时连接
+    LINK_CONNECTION_STATE_NONE          = 0,    //未连接
+    LINK_CONNECTION_STATE_CONNECTING    = 1,    //连接中
+    LINK_CONNECTION_STATE_CONNECTED     = 2,    //已连接
 } ConnectionState;
+
+typedef enum {
+    LINK_CONNECTION_TYPE_NONE    = 0,    //无连接
+    LINK_CONNECTION_TYPE_WIFI    = 1,    //通过WiFi连接
+    LINK_CONNECTION_TYPE_4G      = 2,    //通过4G连接
+    LINK_CONNECTION_TYPE_ALL     = 3,    //通过WiFi和4G同时连接
+} ConnectionType;
 
 #endif //LINKSDK_LINK_CODE_DEF_H

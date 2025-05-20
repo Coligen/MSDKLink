@@ -8,6 +8,8 @@
 
 @property(nonatomic, copy) void (^_Nullable notifyBlock)(LinkNotifyCode type, NSString *_Nullable valueString);//机器状态通知
 
+@property(nonatomic, copy) void (^_Nullable connectionBlock)(ConnectionState type);//连接状态通知
+
 // 文件进度
 @property(nonatomic, copy) void (^_Nullable progressBlock)(double total, double now);
 
@@ -384,6 +386,23 @@
 /// @param block :函数回调，返回请求状态code及state。code异常时，state内容直接忽略。
 /// state对应LinkStateCode值。
 - (void)stopFileCopy:(void(^_Nullable)(NSInteger code, NSInteger state))block;
+
+
+/// 设置连接状态监听
+/// @param block : 设置连接状态监听回调，返回请求状态code。当设置成功时，可在connectionBlock接收状态回调。
+- (void)setConnectionCallback:(void(^_Nullable)(NSInteger code))block;
+
+
+/// 获取连接类型
+/// @param block : 函数回调，返回请求状态code及state。当code异常时，state直接忽视。
+/// state为负值时对应LinkStateCode值，其它值对应ConnectionType类型
+- (void)getConnectionType:(void(^_Nullable)(NSInteger code, NSInteger state))block;
+
+
+/// 获取连接状态(WiFi)
+/// @param block : 函数回调，返回请求状态code及state。当code异常时，state直接忽视。
+/// state为负值时对应LinkStateCode值，其它值对应ConnectionState类型
+- (void)getConnectionState:(void(^_Nullable)(NSInteger code, NSInteger state))block;
 
 
 /// 打开心跳
