@@ -142,8 +142,9 @@ typedef enum {
 #endif
     LINK_CMD_ASR                        = 4041,         //声控功能开关
     LINK_CMD_UPLOAD_COLLISION_DATA      = 4042,         //碰撞数据上传开关
+    LINK_CMD_STORAGE_LOCATION           = 4043,         //对于有多个存储器的设备,设置默认存储器(0:EMMC,1:SDCard)
 
-    LINK_CMD_MAXIMUM                    = LINK_CMD_UPLOAD_COLLISION_DATA + 1
+    LINK_CMD_MAXIMUM                    = LINK_CMD_STORAGE_LOCATION + 1
 } LinkCommand;
 
 typedef enum {
